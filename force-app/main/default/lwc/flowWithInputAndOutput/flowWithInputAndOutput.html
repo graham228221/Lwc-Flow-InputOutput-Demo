@@ -1,0 +1,14 @@
+<template>
+    <template if:true={cases}>
+        <div style="height:300px;">
+            <lightning-datatable
+                key-field="Id"
+                data={cases}
+                columns={columns}
+                onrowselection={handleCaseSelection}
+                max-row-selection="1"
+                resize-column-disabled> 
+            </lightning-datatable>
+        </div>
+    </template>
+</template>
